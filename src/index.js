@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 function bmiCal(){
     let userHeight = parseInt(document.getElementById("height").value)/100;
     let userWeight = parseInt(document.getElementById("weight").value);
