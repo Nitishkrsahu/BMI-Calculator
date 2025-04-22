@@ -51,11 +51,12 @@
                         </div>
                         <div class="row container-fluid gap-1">
                             <button class="btn btn-success col" onclick="bmiCal()">CALCULATE</button>
-                            <button class="btn btn-danger col" data-bs-dismiss="modal">Cancel</button>
+                            <button class="btn btn-danger col" onclick="bmiReset()">Reset</button>
                         </div>
                     </div>
-                    <div class="modal-footer d-flex justify-content-center">
-                        <p class="modal-title" id="bmiData"></p>
+                    <div class="modal-footer">
+                        <h4 class="modal-title w-100 text-center" id="bmiText"></h4>
+                        <p class="w-100" id="bmiData"></p>
                     </div>
                 </div>
             </div>
