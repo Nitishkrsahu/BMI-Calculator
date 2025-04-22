@@ -11,9 +11,9 @@ function bmiCal(){
         let BMI = userWeight/Math.pow(userHeight,2);
         let roundedBmi = BMI.toFixed(2);
         let dataPrintText = document.getElementById("bmiText");
-        dataPrintText.innerHTML = "Success!!".fontcolor('green');
+        dataPrintText.innerHTML = "Result!!".fontcolor('green');
         let dataPrint = document.getElementById("bmiData");
-        dataPrint.innerHTML  = `your Age = ${userAge}<br> calculated BMI = ${roundedBmi}`;
+        dataPrint.innerHTML  = `Your Age = <b>${userAge}</b> Year<br> Calculated BMI = <b>${roundedBmi}</b>`;
     }
 }
 function bmiReset(){

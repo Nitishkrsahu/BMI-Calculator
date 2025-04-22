@@ -13,15 +13,14 @@
         crossorigin="anonymous"></script>
         <script type="text/javascript" src="../src/index.js"></script>
 </head>
-
-<body>
+<body class="container-fluid" style="background-color: #323232;">
     <div class="m-4">
-        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalClose">BMI Calculate</button>
+        <button class="btn btn-warning " data-bs-toggle="modal" data-bs-target="#modalClose"><span class="bi bi-calculator ps-2"></span> BMI Calculator</button>
         <div class="modal animated-grow" id="modalClose">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header bg-info-subtle">
-                        <h2 class="modal-title">BMI CALCULATOR</h2>
+                        <h2 class="modal-title"><span class="bi bi-calculator-fill"></span> BMI CALCULATOR</h2>
                         <button class="btn-close" data-bs-target="#modalClose" data-bs-dismiss="modal"></button>
                     </div>
                     <div class="modal-body">
@@ -44,7 +43,7 @@
                         <div class="mb-2">
                             <label for="age" class="form-label">Enter Your Age: </label>
                             <div class="input-group">
-                                <span class="bi bi-person-standing input-group-text"></span>
+                                <span class="bi bi-person-walking input-group-text"></span>
                                 <input type="text" id="age" class="form-control" placeholder="Ex: 30">
                                 <span class="input-group-text">Year</span>
                             </div>
@@ -56,13 +55,11 @@
                     </div>
                     <div class="modal-footer">
                         <h4 class="modal-title w-100 text-center" id="bmiText"></h4>
-                        <p class="w-100" id="bmiData"></p>
+                        <p class="w-100 text-center" id="bmiData"></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
-
 </html>
